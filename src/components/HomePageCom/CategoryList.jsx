@@ -22,16 +22,17 @@ const CategoryList = () => {
 
     return (
         <div className="text-center my-8">
-            <h2 className="text-2xl font-bold">BESTSELLER PRODUCTS</h2>
-            <p className="text-gray-500">Problems trying to resolve the conflict between</p>
+            <h5 className="text-gray-500  mb-4">Featured Products</h5>
+            <h2 className="text-2xl font-bold mb-4">BESTSELLER PRODUCTS</h2>
+            <p className="text-gray-500 mb-10">Problems trying to resolve the conflict between</p>
 
-            <div className="grid grid-cols-4 gap-4 mt-14 mr-72 ml-72 ">
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 mx-20 lg:mx-72 w-3/5">
                 {products.map(product => (
-                    <div key={product.id} className=" p-1">
-                        <img src={product.image} alt={product.title} className="w-full h-auto mb-4" />
-                        <h3 className="text-lg font-semibold">{product.title}</h3>
-                        <p className="text-gray-600">{product.department}</p>
-                        <div className="flex justify-center items-center my-2">
+                    <div key={product.id} className="flex flex-col items-center p-2">
+                        <img src={product.image} alt={product.title} className="w-full h-auto mb-4 object-cover" />
+                        <h3 className="text-lg font-semibold mb-1">{product.title}</h3>
+                        <p className="text-gray-600 mb-2">{product.department}</p>
+                        <div className="flex justify-center items-center mb-2">
                             {product.colors.slice(0, 5).map((color, index) => (
                                 <span key={index} className={`w-4 h-4 rounded-full bg-${color}-500 mx-1`} />
                             ))}

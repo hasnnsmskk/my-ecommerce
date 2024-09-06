@@ -1,19 +1,19 @@
 import React from 'react'
 import Header from '../components/HomePageCom/Header'
-import TopBar from '../components/HomePageCom/TopBar'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import CategorySection from '../components/HomePageCom/CategorySection'
-import Carousel2 from '../components/HomePageCom/Carousel2'
-import HorizontalCard from '../components/HomePageCom/HorizontalCard'
-import FeaturedPosts from '../components/HomePageCom/FeaturedPosts'
-import Footer from '../components/HomePageCom/Footer'
 import Carousel1 from '../components/HomePageCom/Carousel1';
+import CategorySection from '../components/HomePageCom/CategorySection';
 import CategoryList from '../components/HomePageCom/CategoryList';
+import Carousel2 from '../components/HomePageCom/Carousel2';
+import HorizontalCard from '../components/HomePageCom/HorizontalCard';
+import FeaturedPosts from '../components/HomePageCom/FeaturedPosts';
+import Footer from '../components/HomePageCom/Footer';
+
 function HomePage() {
     return (
         <div>
-            <TopBar />
             <Header />
             <Carousel1 />
             <CategorySection />

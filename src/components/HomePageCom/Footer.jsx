@@ -7,8 +7,8 @@ function Footer() {
         <footer>
             {/* Üst kısım - gri arka plan */}
             <div className="bg-gray-200 py-8">
-                <div className="container mx-auto px-4 flex justify-between items-center">
-                    <h2 className="text-2xl font-bold">Bandage</h2>
+                <div className="container mx-auto px-4 flex flex-col items-start">
+                    <h2 className="text-2xl font-bold mb-4">Bandage</h2>
                     <div className="flex space-x-4">
                         <FontAwesomeIcon
                             icon={faFacebook}
@@ -23,7 +23,6 @@ function Footer() {
                             className="text-blue-500 hover:text-gray-400 cursor-pointer"
                         />
                     </div>
-
                 </div>
             </div>
 
@@ -74,7 +73,7 @@ function Footer() {
                                 placeholder="Your Email"
                                 className="p-2 border border-gray-300 border-r-0 rounded-l"
                             />
-                            <button className="bg-blue-500 text-white p-2 rounded-r">
+                            <button className="bg-blue-500 text-white p-2 rounded-r rounded-l-none">
                                 Subscribe
                             </button>
                         </form>
@@ -85,7 +84,7 @@ function Footer() {
 
             {/* En alt kısım - gri arka plan */}
             <div className="bg-gray-200 py-4">
-                <div className="container mx-auto px-52 flex justify-between">
+                <div className="container mx-auto px-4 flex justify-center">
                     <p className="text-gray-500">Made With Love By Finland All Right Reserved</p>
                 </div>
             </div>

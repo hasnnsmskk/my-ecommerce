@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faUser, faSearch, faShoppingCart, faBars } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faYoutube, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import "../../css/Header.css";
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -45,7 +46,8 @@ function Header() {
                     </div>
                 </div>
                 <nav className="flex flex-col md:flex-row md:space-x-4 items-center space-y-4 md:space-y-0 pt-4">
-                    <a href="#home" className="text-base text-gray-700">Home</a>
+                    <Link to="/" className="text-base text-gray-700">Home</Link>
+                    <Link to="/shop" className="text-base text-gray-700">Shop</Link>
                     <a href="#product" className="text-base text-gray-700">Product</a>
                     <a href="#pricing" className="text-base text-gray-700">Pricing</a>
                     <a href="#contact" className="text-base text-gray-700">Contact</a>

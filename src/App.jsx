@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import "./App.css"
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, createBrowserRouter } from 'react-router-dom'
 import HomePage from './pages/HomePage'
-import ShopPage from './Pages/ShopPage'
+import ShopPage from './pages/ShopPage'
 
 function App() {
   return (

@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../components/HomePageCom/Header'
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Carousel1 from '../components/HomePageCom/Carousel1';

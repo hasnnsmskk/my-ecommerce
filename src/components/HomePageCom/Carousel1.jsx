@@ -14,39 +14,50 @@ function Carousel1() {
             <div className="carousel-inner w-full h-[700px]">  {/* Carousel height tam ekran olarak ayarlandı */}
                 <div className="carousel-item active" data-bs-interval="10000">
                     <img src={resimm} className="d-block w-full h-[700px] object-cover" alt="..." />
-                    <div className="carousel-caption text-center md:text-start bottom-52 md:bottom-12 lg:bottom-48">
-                        <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-1 md:mb-2 lg:mb-3 uppercase tracking-wider text-white">
+                    <div className="carousel-caption absolute text-center md:text-start bottom-52 
+                    md:top-64 md:bottom-12 lg:bottom-48 md:right-auto">
+                        <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-2 md:mb-4 lg:mb-6  tracking-wider text-white">
                             Summer 2024
                         </h5>
                         <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-2 md:mb-4 text-white mt-2">
-                            NEW <br /> COLLECTION
+                            <span className="block md:inline">NEW </span>
+                            <span className="block md:inline">COLLECTION</span>
                         </h2>
-                        <p className="text-base md:text-lg lg:text-xl mb-2 md:mb-6 lg:mb-8 text-white">
-                            We know how large objects<br /> will act,
-                            but things on a <br /> small scale.
+
+                        <p className="text-base md:text-lg lg:text-xl mb-4 md:mb-6 lg:mb-8 text-white">
+                            We know how large objects will act,
+                            <br />
+                            but things on a small scale.
                         </p>
-                        <a href="#" className="bg-green-500 text-white text-xs md:text-sm lg:text-base px-3 py-1 md:px-4 md:py-2 rounded">
+
+                        <a href="#" className="bg-green-500 text-white text-xs md:text-sm lg:text-base px-3 py-2 md:px-4 md:py-2 rounded">
                             SHOP NOW
                         </a>
                     </div>
 
 
+
                 </div>
 
-                <div className="carousel-item active" data-bs-interval="10000">
+                <div className="carousel-item active">
                     <img src={resim} className="d-block w-full h-[700px] object-cover" alt="..." />
-                    <div className="carousel-caption text-center md:text-start bottom-52 md:bottom-12 lg:bottom-48">
-                        <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-1 md:mb-2 lg:mb-3 uppercase tracking-wider text-white">
+                    <div className="carousel-caption absolute text-center md:text-start bottom-52 
+                    md:top-64 md:bottom-12 lg:bottom-48 md:right-auto">
+                        <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-2 md:mb-4 lg:mb-6  tracking-wider text-white">
                             Summer 2024
                         </h5>
                         <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-2 md:mb-4 text-white mt-2">
-                            NEW <br /> COLLECTION
+                            <span className="block md:inline">NEW </span>
+                            <span className="block md:inline">COLLECTION</span>
                         </h2>
-                        <p className="text-base md:text-lg lg:text-xl mb-2 md:mb-6 lg:mb-8 text-white">
-                            We know how large objects<br /> will act,
-                            but things on a <br /> small scale.
+
+                        <p className="text-base md:text-lg lg:text-xl mb-4 md:mb-6 lg:mb-8 text-white">
+                            We know how large objects will act,
+                            <br />
+                            but things on a small scale.
                         </p>
-                        <a href="#" className="bg-green-500 text-white text-xs md:text-sm lg:text-base px-3 py-1 md:px-4 md:py-2 rounded">
+
+                        <a href="#" className="bg-green-500 text-white text-xs md:text-sm lg:text-base px-3 py-2 md:px-4 md:py-2 rounded">
                             SHOP NOW
                         </a>
                     </div>
@@ -54,20 +65,25 @@ function Carousel1() {
 
                 </div>
 
-                <div className="carousel-item active" data-bs-interval="10000">
+                <div className="carousel-item active">
                     <img src={img} className="d-block w-full h-[700px] object-cover" alt="..." />
-                    <div className="carousel-caption text-center md:text-start bottom-52 md:bottom-12 lg:bottom-48">
-                        <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-1 md:mb-2 lg:mb-3 uppercase tracking-wider text-white">
+                    <div className="carousel-caption absolute text-center md:text-start bottom-52 
+                    md:top-64 md:bottom-12 lg:bottom-48 md:right-auto">
+                        <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-2 md:mb-4 lg:mb-6  tracking-wider text-white">
                             Summer 2024
                         </h5>
                         <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-2 md:mb-4 text-white mt-2">
-                            NEW <br /> COLLECTION
+                            <span className="block md:inline">NEW </span>
+                            <span className="block md:inline">COLLECTION</span>
                         </h2>
-                        <p className="text-base md:text-lg lg:text-xl mb-2 md:mb-6 lg:mb-8 text-white">
-                            We know how large objects<br /> will act,
-                            but things on a <br /> small scale.
+
+                        <p className="text-base md:text-lg lg:text-xl mb-4 md:mb-6 lg:mb-8 text-white">
+                            We know how large objects will act,
+                            <br />
+                            but things on a small scale.
                         </p>
-                        <a href="#" className="bg-green-500 text-white text-xs md:text-sm lg:text-base px-3 py-1 md:px-4 md:py-2 rounded">
+
+                        <a href="#" className="bg-green-500 text-white text-xs md:text-sm lg:text-base px-3 py-2 md:px-4 md:py-2 rounded">
                             SHOP NOW
                         </a>
                     </div>

@@ -21,7 +21,7 @@ const CategoryList = () => {
     ];
 
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 5;
+    const itemsPerPage = 12;
 
     // Sayfalama işlemi
     const indexOfLastItem = currentPage * itemsPerPage;
@@ -42,7 +42,8 @@ const CategoryList = () => {
 
     return (
         <div className="text-center my-8">
-            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 mx-20 lg:mx-72 w-3/5">
+            {/* Ürünler kısmı */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4s xl:grid-cols-4 gap-4 mx-4 lg:mx-10">
                 {currentItems.map(product => (
                     <div key={product.id} className="flex flex-col items-center p-2">
                         <img src={product.image} alt={product.title} className="w-full h-auto mb-4 object-cover" />

@@ -5,11 +5,11 @@ import React from 'react';
 function Footer() {
     return (
         <footer>
-            {/* Üst kısım - gri arka plan */}
-            <div className="bg-gray-200 py-8">
-                <div className="container mx-auto px-4 flex flex-col items-start">
-                    <h2 className="text-2xl font-bold mb-4">Bandage</h2>
-                    <div className="flex space-x-4">
+            {/* Üst kısım - beyaz arka plan */}
+            <div className="bg-white py-2">
+                <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-start md:items-center justify-between">
+                    <h2 className="text-2xl font-bold  md:mb-0">Bandage</h2>
+                    <div className="flex space-x-4 mt-4 md:mt-0">
                         <FontAwesomeIcon
                             icon={faFacebook}
                             className="text-blue-500 hover:text-gray-400 cursor-pointer"
@@ -25,10 +25,10 @@ function Footer() {
                     </div>
                 </div>
             </div>
-
+            <hr className="my-4 mx-auto w-3/4 border-gray-600" />
             {/* Alt kısım - beyaz arka plan */}
             <div className="bg-white py-8">
-                <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                     <div>
                         <h3 className="font-bold mb-4">Company Info</h3>
                         <ul className="space-y-2">
@@ -84,7 +84,7 @@ function Footer() {
 
             {/* En alt kısım - gri arka plan */}
             <div className="bg-gray-200 py-4">
-                <div className="container mx-auto px-4 flex justify-center">
+                <div className="max-w-6xl mx-auto px-4 flex justify-center">
                     <p className="text-gray-500">Made With Love By Finland All Right Reserved</p>
                 </div>
             </div>

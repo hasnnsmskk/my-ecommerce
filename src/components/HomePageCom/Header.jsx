@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope, faUser, faSearch, faShoppingCart, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faUser, faSearch, faShoppingCart, faBars, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faYoutube, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import "../../css/Header.css";
 import { Link } from 'react-router-dom';
 
 function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false); // Menünün açık olup olmadığını takip eden state
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen); // Menünün açık/kapalı durumunu değiştirir
+    };
+
     return (
         <header>
-            {/* Footer kodları */}
+            {/* Üst Bar (Masaüstü için görünür) */}
             <div className="hidden md:block bg-gray-800 text-white p-2 text-sm">
                 <div className="container mx-auto flex justify-between items-center">
                     <div className="flex space-x-4">
@@ -37,24 +43,56 @@ function Header() {
             {/* Header içeriği */}
             <div className="bg-white shadow-md p-4">
                 <div className="flex justify-between items-center">
-                    <h1 className="text-xl font-bold">Bandage</h1>
-                    <div className="flex space-x-4">
-                        <FontAwesomeIcon icon={faUser} className="text-lg cursor-pointer" />
-                        <FontAwesomeIcon icon={faSearch} className="text-lg cursor-pointer" />
-                        <FontAwesomeIcon icon={faShoppingCart} className="text-lg cursor-pointer" />
-                        <FontAwesomeIcon icon={faBars} className="text-lg cursor-pointer md:hidden" />
+                    <h1 className="text-xl font-bold ml-4">Bandage</h1>
+
+                    {/* Masaüstü için navigasyon menüsü */}
+                    <nav className="hidden md:flex md:space-x-4 items-center ml-28 mr-auto ">
+                        <Link to="/" className="text-base text-gray-700">Home</Link>
+                        <Link to="/shop" className="text-base text-gray-700">Shop</Link>
+                        <a href="#product" className="text-base text-gray-700">Product</a>
+                        <a href="#pricing" className="text-base text-gray-700">Pricing</a>
+                        <a href="#contact" className="text-base text-gray-700">Contact</a>
+                    </nav>
+
+                    {/* Sağdaki ikonlar */}
+                    <div className="flex space-x-3 items-center mr-2">
+                        {/* Mobilde görünen ikonlar */}
+                        <FontAwesomeIcon icon={faUser} className="text-lg cursor-pointer md:hidden" />
+                        <FontAwesomeIcon icon={faSearch} className="text-lg cursor-pointer md:hidden" />
+                        <FontAwesomeIcon icon={faShoppingCart} className="text-lg cursor-pointer md:hidden" />
+
+                        {/* Masaüstü için farklı ikonlar */}
+                        <FontAwesomeIcon icon={faUser} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
+                        <span className="hidden md:block text-blue-500 text-lg cursor-pointer">Login/User</span>
+                        <FontAwesomeIcon icon={faSearch} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
+                        <FontAwesomeIcon icon={faShoppingCart} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
+                        <FontAwesomeIcon icon={faHeart} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
+
+                        {/* Mobilde görünen menü ikonu */}
+                        <FontAwesomeIcon icon={faBars} className="text-lg cursor-pointer md:hidden" onClick={toggleMenu} />
                     </div>
+
                 </div>
-                <nav className="flex flex-col md:flex-row md:space-x-4 items-center space-y-4 md:space-y-0 pt-4">
-                    <Link to="/" className="text-base text-gray-700">Home</Link>
-                    <Link to="/shop" className="text-base text-gray-700">Shop</Link>
-                    <a href="#product" className="text-base text-gray-700">Product</a>
-                    <a href="#pricing" className="text-base text-gray-700">Pricing</a>
-                    <a href="#contact" className="text-base text-gray-700">Contact</a>
-                </nav>
+
+                {/* Mobil için açılır kapanır navigasyon menüsü */}
+                {isMenuOpen && (
+                    <nav className="flex flex-col justify-center items-center  space-y-4 pt-4 md:hidden ">
+                        <Link to="/" className="text-base text-gray-700">Home</Link>
+                        <Link to="/shop" className="text-base text-gray-700">Shop</Link>
+                        <a href="#product" className="text-base text-gray-700">Product</a>
+                        <a href="#pricing" className="text-base text-gray-700">Pricing</a>
+                        <a href="#contact" className="text-base text-gray-700">Contact</a>
+                    </nav>
+                )}
             </div>
         </header>
     );
 }
 
 export default Header;
+
+
+
+
+
+

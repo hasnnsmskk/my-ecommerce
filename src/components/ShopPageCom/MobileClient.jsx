@@ -8,7 +8,7 @@ import redditLogo from '../../assets/ShopPageİmg/reddit.png';
 
 function MobileClient() {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-6 py-10 bg-gray-50 md:gap-24">
+        <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-32 py-10 bg-gray-50">
             <img src={hooliLogo} alt="Hooli" className="w-20 h-20 object-contain" />
             <img src={lyftLogo} alt="Lyft" className="w-20 h-20 object-contain" />
             <img src={leafLogo} alt="Leaf" className="w-20 h-20 object-contain" />

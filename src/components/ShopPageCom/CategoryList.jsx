@@ -43,23 +43,25 @@ const CategoryList = () => {
     return (
         <div className="text-center my-8">
             {/* Ürünler kısmı */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4s xl:grid-cols-4 gap-4 mx-4 lg:mx-10">
-                {currentItems.map(product => (
-                    <div key={product.id} className="flex flex-col items-center p-2">
-                        <img src={product.image} alt={product.title} className="w-full h-auto mb-4 object-cover" />
-                        <h3 className="text-lg font-semibold mb-1">{product.title}</h3>
-                        <p className="text-gray-600 mb-2">{product.department}</p>
-                        <div className="flex justify-center items-center mb-2">
-                            {product.colors.slice(0, 5).map((color, index) => (
-                                <span key={index} className={`w-4 h-4 rounded-full bg-${color}-500 mx-1`} />
-                            ))}
+            <div className="container mx-auto px-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    {currentItems.map(product => (
+                        <div key={product.id} className="flex flex-col items-center p-2">
+                            <img src={product.image} alt={product.title} className="w-full h-auto mb-4 object-cover" />
+                            <h3 className="text-lg font-semibold mb-1">{product.title}</h3>
+                            <p className="text-gray-600 mb-2">{product.department}</p>
+                            <div className="flex justify-center items-center mb-2">
+                                {product.colors.slice(0, 5).map((color, index) => (
+                                    <span key={index} className={`w-4 h-4 rounded-full bg-${color}-500 mx-1`} />
+                                ))}
+                            </div>
+                            <div className="flex flex-row items-center justify-center gap-1">
+                                <p className="text-gray-500 line-through">{product.oldPrice}</p>
+                                <p className="text-green-500 font-bold">{product.newPrice}</p>
+                            </div>
                         </div>
-                        <div className="flex flex-row items-center justify-center gap-1">
-                            <p className="text-gray-500 line-through">{product.oldPrice}</p>
-                            <p className="text-green-500 font-bold">{product.newPrice}</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
 
             {/* Sayfa numaralandırma */}

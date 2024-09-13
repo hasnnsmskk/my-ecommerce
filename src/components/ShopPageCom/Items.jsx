@@ -20,114 +20,45 @@ function Items() {
                 </div>
             </div>
 
-            {/*Itemler */}
+            {/* Itemler */}
             <div className="bg-gray-100 py-6">
                 <div className="container mx-auto px-4">
                     {/* Mobil görünümde grid düzeni */}
                     <div className="block md:hidden">
                         <div className="grid grid-cols-1 gap-4">
-                            <Link to="/product-page-1" className="relative group">
-                                <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                                <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                    <div>
-                                        <h2 className="text-2xl font-bold">Cloths</h2>
-                                        <p className="mt-2 text-lg">5 Items</p>
+                            {[1, 2, 3, 4, 5].map((item) => (
+                                <Link to={`/product-page-${item}`} key={item} className="relative group">
+                                    <img src={cloths} alt={`Cloths ${item}`} className="w-full h-48 object-cover" />
+                                    <div className="absolute inset-0 flex items-center justify-center text-white text-center">
+                                        <div>
+                                            <h2 className="text-2xl font-bold">Cloths</h2>
+                                            <p className="mt-2 text-lg">5 Items</p>
+                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                            <Link to="/product-page-2" className="relative group">
-                                <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                                <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                    <div>
-                                        <h2 className="text-2xl font-bold">Cloths</h2>
-                                        <p className="mt-2 text-lg">5 Items</p>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link to="/product-page-3" className="relative group">
-                                <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                                <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                    <div>
-                                        <h2 className="text-2xl font-bold">Cloths</h2>
-                                        <p className="mt-2 text-lg">5 Items</p>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link to="/product-page-4" className="relative group">
-                                <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                                <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                    <div>
-                                        <h2 className="text-2xl font-bold">Cloths</h2>
-                                        <p className="mt-2 text-lg">5 Items</p>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link to="/product-page-5" className="relative group">
-                                <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                                <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                    <div>
-                                        <h2 className="text-2xl font-bold">Cloths</h2>
-                                        <p className="mt-2 text-lg">5 Items</p>
-                                    </div>
-                                </div>
-                            </Link>
+                                </Link>
+                            ))}
                         </div>
                     </div>
 
                     {/* Masaüstü görünümünde yatay düzen */}
                     <div className="hidden md:grid md:grid-cols-5 md:gap-4">
-                        <Link to="/product-page-1" className="relative group">
-                            <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                            <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                <div>
-                                    <h2 className="text-2xl font-bold">Cloths</h2>
-                                    <p className="mt-2 text-lg">5 Items</p>
+                        {[1, 2, 3, 4, 5].map((item) => (
+                            <Link to={`/product-page-${item}`} key={item} className="relative group">
+                                <img src={cloths} alt={`Cloths ${item}`} className="w-full h-48 object-cover" />
+                                <div className="absolute inset-0 flex items-center justify-center text-white text-center">
+                                    <div>
+                                        <h2 className="text-2xl font-bold">Cloths</h2>
+                                        <p className="mt-2 text-lg">5 Items</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </Link>
-                        <Link to="/product-page-2" className="relative group">
-                            <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                            <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                <div>
-                                    <h2 className="text-2xl font-bold">Cloths</h2>
-                                    <p className="mt-2 text-lg">5 Items</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/product-page-3" className="relative group">
-                            <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                            <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                <div>
-                                    <h2 className="text-2xl font-bold">Cloths</h2>
-                                    <p className="mt-2 text-lg">5 Items</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/product-page-4" className="relative group">
-                            <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                            <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                <div>
-                                    <h2 className="text-2xl font-bold">Cloths</h2>
-                                    <p className="mt-2 text-lg">5 Items</p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link to="/product-page-5" className="relative group">
-                            <img src={cloths} alt="Cloths" className="w-full h-48 object-cover" />
-                            <div className="absolute inset-0 flex items-center justify-center text-white text-center">
-                                <div>
-                                    <h2 className="text-2xl font-bold">Cloths</h2>
-                                    <p className="mt-2 text-lg">5 Items</p>
-                                </div>
-                            </div>
-                        </Link>
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </div>
 
             <div className="py-6">
                 <div className="container mx-auto px-4">
-
                     {/* Mobil görünüm */}
                     <div className="block md:hidden">
                         <p className="text-center text-gray-700">Showing all 12 results</p>
@@ -199,9 +130,6 @@ function Items() {
 
                 </div>
             </div>
-
-
-
         </div>
     );
 }

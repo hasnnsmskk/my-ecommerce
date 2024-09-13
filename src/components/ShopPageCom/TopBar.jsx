@@ -32,10 +32,10 @@ function TopBar() {
                     </div>
                     <div className="flex space-x-4 items-center mr-4">
                         <span>Follow us:</span>
-                        <FontAwesomeIcon icon={faInstagram} className="hover:text-gray-400 cursor-pointer" />
-                        <FontAwesomeIcon icon={faYoutube} className="hover:text-gray-400 cursor-pointer" />
-                        <FontAwesomeIcon icon={faFacebook} className="hover:text-gray-400 cursor-pointer" />
-                        <FontAwesomeIcon icon={faTwitter} className="hover:text-gray-400 cursor-pointer" />
+                        <FontAwesomeIcon icon={faInstagram} className="hover-effect" />
+                        <FontAwesomeIcon icon={faYoutube} className="hover-effect" />
+                        <FontAwesomeIcon icon={faFacebook} className="hover-effect" />
+                        <FontAwesomeIcon icon={faTwitter} className="hover-effect" />
                     </div>
                 </div>
             </div>
@@ -54,23 +54,17 @@ function TopBar() {
                         <a href="#contact" className="text-base text-gray-700">Contact</a>
                     </nav>
 
-                    {/* Sağdaki ikonlar */}
-                    <div className="flex space-x-3 items-center mr-2">
-                        {/* Mobilde görünen ikonlar */}
-                        <FontAwesomeIcon icon={faUser} className="text-lg cursor-pointer md:hidden" />
-                        <FontAwesomeIcon icon={faSearch} className="text-lg cursor-pointer md:hidden" />
-                        <FontAwesomeIcon icon={faShoppingCart} className="text-lg cursor-pointer md:hidden" />
-
-                        {/* Masaüstü için farklı ikonlar */}
-                        <FontAwesomeIcon icon={faUser} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
-                        <span className="hidden md:block text-blue-500 text-lg cursor-pointer">Login/User</span>
-                        <FontAwesomeIcon icon={faSearch} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
-                        <FontAwesomeIcon icon={faShoppingCart} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
-                        <FontAwesomeIcon icon={faHeart} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
-
-                        {/* Mobilde görünen menü ikonu */}
-                        <FontAwesomeIcon icon={faBars} className="text-lg cursor-pointer md:hidden" onClick={toggleMenu} />
+                    {/* Sağdaki ikonlar (Sadece masaüstü için) */}
+                    <div className="hidden md:flex space-x-3 items-center mr-2">
+                        <FontAwesomeIcon icon={faUser} className="icon-styles" />
+                        <span className="text-blue-500 text-lg cursor-pointer">Login/User</span>
+                        <FontAwesomeIcon icon={faSearch} className="icon-styles" />
+                        <FontAwesomeIcon icon={faShoppingCart} className="icon-styles" />
+                        <FontAwesomeIcon icon={faHeart} className="icon-styles" />
                     </div>
+
+                    {/* Mobilde görünen menü ikonu */}
+                    <FontAwesomeIcon icon={faBars} className="text-lg cursor-pointer md:hidden" onClick={toggleMenu} />
                 </div>
 
                 {/* Mobil için açılır kapanır navigasyon menüsü */}
@@ -84,10 +78,10 @@ function TopBar() {
                             <a href="#contact" className="text-base text-gray-700" onClick={toggleMenu}>Contact</a>
                         </nav>
                         <div className="mt-8 flex flex-col items-center space-y-4">
-                            <FontAwesomeIcon icon={faUser} className="text-blue-500 text-lg cursor-pointer" />
-                            <FontAwesomeIcon icon={faSearch} className="text-blue-500 text-lg cursor-pointer" />
-                            <FontAwesomeIcon icon={faShoppingCart} className="text-blue-500 text-lg cursor-pointer" />
-                            <FontAwesomeIcon icon={faHeart} className="text-blue-500 text-lg cursor-pointer" />
+                            <FontAwesomeIcon icon={faUser} className="icon-styles" />
+                            <FontAwesomeIcon icon={faSearch} className="icon-styles" />
+                            <FontAwesomeIcon icon={faShoppingCart} className="icon-styles" />
+                            <FontAwesomeIcon icon={faHeart} className="icon-styles" />
                         </div>
                     </div>
                 )}

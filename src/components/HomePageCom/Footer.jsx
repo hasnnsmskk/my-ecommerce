@@ -5,64 +5,64 @@ import React from 'react';
 function Footer() {
     return (
         <footer>
-            {/* Üst kısım - beyaz arka plan */}
+            {/* Üst kısım  */}
             <div className="bg-gray-100 py-2">
                 <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-start md:items-center justify-between">
-                    <h2 className="text-2xl font-bold  md:mb-0">Bandage</h2>
+                    <h2 className="text-2xl font-bold md:mb-0">Bandage</h2>
                     <div className="flex space-x-4 mt-4 md:mt-0">
                         <FontAwesomeIcon
                             icon={faFacebook}
-                            className="text-blue-500 hover:text-gray-400 cursor-pointer"
+                            className="text-blue-500 hover:text-gray-400 cursor-pointer text-xl"
                         />
                         <FontAwesomeIcon
                             icon={faInstagram}
-                            className="text-blue-500 hover:text-gray-400 cursor-pointer"
+                            className="text-blue-500 hover:text-gray-400 cursor-pointer text-xl"
                         />
                         <FontAwesomeIcon
                             icon={faTwitter}
-                            className="text-blue-500 hover:text-gray-400 cursor-pointer"
+                            className="text-blue-500 hover:text-gray-400 cursor-pointer text-xl"
                         />
                     </div>
                 </div>
             </div>
             <hr className="my-4 mx-auto w-3/4 border-gray-600" />
-            {/* Alt kısım - beyaz arka plan */}
+            {/* Alt kısım */}
             <div className="bg-white py-8">
                 <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                     <div>
                         <h3 className="font-bold mb-4">Company Info</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-600">About Us</a></li>
-                            <li><a href="#" className="text-gray-600">Carrier</a></li>
-                            <li><a href="#" className="text-gray-600">We are hiring</a></li>
-                            <li><a href="#" className="text-gray-600">Blog</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">About Us</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">Carrier</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">We are hiring</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">Blog</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-bold mb-4">Legal</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-600">About Us</a></li>
-                            <li><a href="#" className="text-gray-600">Carrier</a></li>
-                            <li><a href="#" className="text-gray-600">We are hiring</a></li>
-                            <li><a href="#" className="text-gray-600">Blog</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">About Us</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">Carrier</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">We are hiring</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">Blog</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-bold mb-4">Features</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-600">Business Marketing</a></li>
-                            <li><a href="#" className="text-gray-600">User Analytic</a></li>
-                            <li><a href="#" className="text-gray-600">Live Chat</a></li>
-                            <li><a href="#" className="text-gray-600">Unlimited Support</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">Business Marketing</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">User Analytic</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">Live Chat</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">Unlimited Support</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-bold mb-4">Resources</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-600">iOS & Android</a></li>
-                            <li><a href="#" className="text-gray-600">Watch a Demo</a></li>
-                            <li><a href="#" className="text-gray-600">Customers</a></li>
-                            <li><a href="#" className="text-gray-600">API</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">iOS & Android</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">Watch a Demo</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">Customers</a></li>
+                            <li><a href="#" className="text-gray-600 hover:text-gray-800">API</a></li>
                         </ul>
                     </div>
                     <div>
@@ -73,7 +73,7 @@ function Footer() {
                                 placeholder="Your Email"
                                 className="p-2 border border-gray-300 border-r-0 rounded-l"
                             />
-                            <button className="bg-blue-500 text-white p-2 rounded-r rounded-l-none">
+                            <button className="bg-blue-500 text-white p-2 rounded-r">
                                 Subscribe
                             </button>
                         </form>
@@ -82,7 +82,7 @@ function Footer() {
                 </div>
             </div>
 
-            {/* En alt kısım - gri arka plan */}
+            {/* En alt kısım */}
             <div className="bg-gray-100 py-4">
                 <div className="max-w-6xl mx-auto px-4 flex justify-center">
                     <p className="text-gray-500">Made With Love By Finland All Right Reserved</p>

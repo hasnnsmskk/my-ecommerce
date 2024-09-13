@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import carousel1 from "../../assets/HomePageİmg/carousel1.jpg";
-import carousel2 from "../../assets/HomePageİmg/carousel2.jpg"
-import carousel3 from "../../assets/HomePageİmg/carousel3.jpg"
+import carousel2 from "../../assets/HomePageİmg/carousel2.jpg";
+import carousel3 from "../../assets/HomePageİmg/carousel3.jpg";
+
 function Carousel2() {
     return (
         <div>
@@ -15,7 +16,7 @@ function Carousel2() {
                     <div className="carousel-item active">
                         <img src={carousel1} className="d-block w-full h-[700px] object-cover" alt="..." />
                         <div className="carousel-caption absolute text-center md:text-start bottom-52 md:top-64 md:bottom-12 lg:bottom-48 md:right-auto">
-                            <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-2 md:mb-4 lg:mb-6  tracking-wider text-white">
+                            <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-2 md:mb-4 lg:mb-6 tracking-wider text-white">
                                 Summer 2024
                             </h5>
                             <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-2 md:mb-4 text-white mt-2">
@@ -39,7 +40,7 @@ function Carousel2() {
                     <div className="carousel-item">
                         <img src={carousel2} className="d-block w-full h-[700px] object-cover" alt="..." />
                         <div className="carousel-caption absolute text-center md:text-start bottom-52 md:top-64 md:bottom-12 lg:bottom-48 md:right-auto">
-                            <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-2 md:mb-4 lg:mb-6  tracking-wider text-white">
+                            <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-2 md:mb-4 lg:mb-6 tracking-wider text-white">
                                 Summer 2024
                             </h5>
                             <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-2 md:mb-4 text-white mt-2">
@@ -63,7 +64,7 @@ function Carousel2() {
                     <div className="carousel-item">
                         <img src={carousel3} className="d-block w-full h-[700px] object-cover" alt="..." />
                         <div className="carousel-caption absolute text-center md:text-start bottom-52 md:top-64 md:bottom-12 lg:bottom-48 md:right-auto">
-                            <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-2 md:mb-4 lg:mb-6  tracking-wider text-white">
+                            <h5 className="text-xs md:text-lg lg:text-xl font-semibold mb-2 md:mb-4 lg:mb-6 tracking-wider text-white">
                                 Summer 2024
                             </h5>
                             <h2 className="text-xl md:text-3xl lg:text-5xl font-bold mb-2 md:mb-4 text-white mt-2">
@@ -94,12 +95,8 @@ function Carousel2() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-
-
-
-        </div >
-
-    )
+        </div>
+    );
 }
 
-export default Carousel2
+export default Carousel2;

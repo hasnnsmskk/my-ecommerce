@@ -3,6 +3,8 @@ import "./App.css"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import HomePage from "./HomePage"
 import ShopPage from "./ShopPage"
+
+
 function App() {
   return (
     <Router>

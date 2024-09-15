@@ -67,5 +67,3 @@ function Carousel1() {
 
 export default Carousel1;
 
-
-"sa"

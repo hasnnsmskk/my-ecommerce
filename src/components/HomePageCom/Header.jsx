@@ -6,10 +6,10 @@ import "../../css/Header.css";
 import { Link } from 'react-router-dom';
 
 function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // Menünün açık olup olmadığını takip eden state
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen); // Menünün açık/kapalı durumunu değiştirir
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (
@@ -49,7 +49,7 @@ function Header() {
                     <nav className="hidden md:flex md:space-x-4 items-center ml-28 mr-auto ">
                         <Link to="/" className="text-base text-gray-700">Home</Link>
                         <Link to="/shop" className="text-base text-gray-700">Shop</Link>
-                        <a href="#product" className="text-base text-gray-700">Product</a>
+                        <Link to="/product" className="text-base text-gray-700">Product</Link>
                         <a href="#pricing" className="text-base text-gray-700">Pricing</a>
                         <a href="#contact" className="text-base text-gray-700">Contact</a>
                     </nav>
@@ -62,8 +62,10 @@ function Header() {
                         <FontAwesomeIcon icon={faShoppingCart} className="text-lg cursor-pointer md:hidden" />
 
                         {/* Masaüstü için farklı ikonlar */}
+
                         <FontAwesomeIcon icon={faUser} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
-                        <span className="hidden md:block text-blue-500 text-lg cursor-pointer">Login/User</span>
+                        <span className='hidden md:block text-blue-500 text-lg cursor-pointer'>Login/User</span>
+
                         <FontAwesomeIcon icon={faSearch} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
                         <FontAwesomeIcon icon={faShoppingCart} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
                         <FontAwesomeIcon icon={faHeart} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
@@ -71,15 +73,14 @@ function Header() {
                         {/* Mobilde görünen menü ikonu */}
                         <FontAwesomeIcon icon={faBars} className="text-lg cursor-pointer md:hidden" onClick={toggleMenu} />
                     </div>
-
                 </div>
 
                 {/* Mobil için açılır kapanır navigasyon menüsü */}
                 {isMenuOpen && (
-                    <nav className="flex flex-col justify-center items-center  space-y-4 pt-4 md:hidden ">
+                    <nav className="flex flex-col justify-center items-center space-y-4 pt-4 md:hidden">
                         <Link to="/" className="text-base text-gray-700">Home</Link>
                         <Link to="/shop" className="text-base text-gray-700">Shop</Link>
-                        <a href="#product" className="text-base text-gray-700">Product</a>
+                        <Link to="/product" className="text-base text-gray-700">Product</Link>
                         <a href="#pricing" className="text-base text-gray-700">Pricing</a>
                         <a href="#contact" className="text-base text-gray-700">Contact</a>
                     </nav>
@@ -90,9 +91,3 @@ function Header() {
 }
 
 export default Header;
-
-
-
-
-
-

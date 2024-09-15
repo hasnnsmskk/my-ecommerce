@@ -49,7 +49,7 @@ function TopBar() {
                     <nav className="hidden md:flex md:space-x-4 items-center ml-28 mr-auto">
                         <Link to="/" className="text-base text-gray-700">Home</Link>
                         <Link to="/shop" className="text-base text-gray-700">Shop</Link>
-                        <a href="#product" className="text-base text-gray-700">Product</a>
+                        <Link to="/product" className="text-base text-gray-700">Product</Link>
                         <a href="#pricing" className="text-base text-gray-700">Pricing</a>
                         <a href="#contact" className="text-base text-gray-700">Contact</a>
                     </nav>
@@ -73,7 +73,7 @@ function TopBar() {
                         <nav className="flex flex-col items-center space-y-4">
                             <Link to="/" className="text-base text-gray-700" onClick={toggleMenu}>Home</Link>
                             <Link to="/shop" className="text-base text-gray-700" onClick={toggleMenu}>Shop</Link>
-                            <a href="#product" className="text-base text-gray-700" onClick={toggleMenu}>Product</a>
+                            <Link to="/product" className="text-base text-gray-700" onClick={toggleMenu}>Product</Link>
                             <a href="#pricing" className="text-base text-gray-700" onClick={toggleMenu}>Pricing</a>
                             <a href="#contact" className="text-base text-gray-700" onClick={toggleMenu}>Contact</a>
                         </nav>

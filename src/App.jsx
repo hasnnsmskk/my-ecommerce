@@ -1,9 +1,7 @@
-import { useState } from 'react'
-import "./App.css"
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import HomePage from "./HomePage"
-import ShopPage from "./ShopPage"
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './HomePage';
+import ShopPage from './ShopPage';
+import ProductDetailPage from './ProduckDetailPage'
 
 function App() {
   return (
@@ -11,9 +9,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
+        <Route path="/product" element={<ProductDetailPage />} /> {/* Ürün Detay Sayfası */}
       </Routes>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -51,13 +51,13 @@ function TopBar() {
                         <Link to="/shop" className="text-base text-gray-700">Shop</Link>
                         <Link to="/product" className="text-base text-gray-700">Product</Link>
                         <a href="#pricing" className="text-base text-gray-700">Pricing</a>
-                        <a href="#contact" className="text-base text-gray-700">Contact</a>
+                        <Link to="contact" className="text-base text-gray-700">Contact</Link>
                     </nav>
 
                     {/* Sağdaki ikonlar (Sadece masaüstü için) */}
                     <div className="hidden md:flex space-x-3 items-center mr-2">
                         <FontAwesomeIcon icon={faUser} className="icon-styles" />
-                        <span className="text-blue-500 text-lg cursor-pointer">Login/User</span>
+                        <span className="text-blue-500 text-lg cursor-pointer">Login/Register</span>
                         <FontAwesomeIcon icon={faSearch} className="icon-styles" />
                         <FontAwesomeIcon icon={faShoppingCart} className="icon-styles" />
                         <FontAwesomeIcon icon={faHeart} className="icon-styles" />
@@ -75,7 +75,7 @@ function TopBar() {
                             <Link to="/shop" className="text-base text-gray-700" onClick={toggleMenu}>Shop</Link>
                             <Link to="/product" className="text-base text-gray-700" onClick={toggleMenu}>Product</Link>
                             <a href="#pricing" className="text-base text-gray-700" onClick={toggleMenu}>Pricing</a>
-                            <a href="#contact" className="text-base text-gray-700" onClick={toggleMenu}>Contact</a>
+                            <Link to="/contact" className="text-base text-gray-700" onClick={toggleMenu}>Contact</Link>
                         </nav>
                         <div className="mt-8 flex flex-col items-center space-y-4">
                             <FontAwesomeIcon icon={faUser} className="icon-styles" />

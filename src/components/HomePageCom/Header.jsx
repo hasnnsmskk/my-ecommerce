@@ -51,7 +51,7 @@ function Header() {
                         <Link to="/shop" className="text-base text-gray-700">Shop</Link>
                         <Link to="/product" className="text-base text-gray-700">Product</Link>
                         <a href="#pricing" className="text-base text-gray-700">Pricing</a>
-                        <a href="#contact" className="text-base text-gray-700">Contact</a>
+                        <Link to="contact" className="text-base text-gray-700">Contact</Link>
                     </nav>
 
                     {/* Sağdaki ikonlar */}
@@ -64,7 +64,7 @@ function Header() {
                         {/* Masaüstü için farklı ikonlar */}
 
                         <FontAwesomeIcon icon={faUser} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
-                        <span className='hidden md:block text-blue-500 text-lg cursor-pointer'>Login/User</span>
+                        <span className='hidden md:block text-blue-500 text-lg cursor-pointer'>Login/Register</span>
 
                         <FontAwesomeIcon icon={faSearch} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
                         <FontAwesomeIcon icon={faShoppingCart} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
@@ -82,7 +82,7 @@ function Header() {
                         <Link to="/shop" className="text-base text-gray-700">Shop</Link>
                         <Link to="/product" className="text-base text-gray-700">Product</Link>
                         <a href="#pricing" className="text-base text-gray-700">Pricing</a>
-                        <a href="#contact" className="text-base text-gray-700">Contact</a>
+                        <Link to="contact" className="text-base text-gray-700">Contact</Link>
                     </nav>
                 )}
             </div>

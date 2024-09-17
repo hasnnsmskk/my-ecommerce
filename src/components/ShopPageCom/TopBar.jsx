@@ -51,7 +51,7 @@ function TopBar() {
                         <Link to="/shop" className="text-base text-gray-700">Shop</Link>
                         <Link to="/product" className="text-base text-gray-700">Product</Link>
                         <a href="#pricing" className="text-base text-gray-700">Pricing</a>
-                        <Link to="contact" className="text-base text-gray-700">Contact</Link>
+                        <Link to="/contact" className="text-base text-gray-700">Contact</Link>
                     </nav>
 
                     {/* Sağdaki ikonlar (Sadece masaüstü için) */}

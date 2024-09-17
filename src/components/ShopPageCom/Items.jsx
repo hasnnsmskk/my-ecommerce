@@ -27,7 +27,7 @@ function Items() {
                     <div className="block md:hidden">
                         <div className="grid grid-cols-1 gap-4">
                             {[1, 2, 3, 4, 5].map((item) => (
-                                <Link to={`/product-page-${item}`} key={item} className="relative group">
+                                <Link to={`/product/${item}`} key={item} className="relative group">
                                     <img src={cloths} alt={`Cloths ${item}`} className="w-full h-48 object-cover" />
                                     <div className="absolute inset-0 flex items-center justify-center text-white text-center">
                                         <div>
@@ -43,7 +43,7 @@ function Items() {
                     {/* Masaüstü görünümünde yatay düzen */}
                     <div className="hidden md:grid md:grid-cols-5 md:gap-4">
                         {[1, 2, 3, 4, 5].map((item) => (
-                            <Link to={`/product-page-${item}`} key={item} className="relative group">
+                            <Link to={`/product/${item}`} key={item} className="relative group">
                                 <img src={cloths} alt={`Cloths ${item}`} className="w-full h-48 object-cover" />
                                 <div className="absolute inset-0 flex items-center justify-center text-white text-center">
                                     <div>

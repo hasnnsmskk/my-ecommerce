@@ -1,5 +1,5 @@
 import React from 'react';
-import question from "../../assets/ContactPageImg/question.jpg"
+import question from "../../assets/ContactPageİmg/question.jpg"
 function QuestionsAnswers() {
     return (
         <div className="relative w-full h-screen">

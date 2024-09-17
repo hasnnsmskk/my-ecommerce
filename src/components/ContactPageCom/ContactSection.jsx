@@ -1,5 +1,5 @@
 import React from 'react';
-import kadınn from "../../assets/HomePageImg/kadınn.jpg";
+import kadınn from "../../assets/HomePageİmg/kadınn.jpg";
 
 function ContactSection() {
     return (

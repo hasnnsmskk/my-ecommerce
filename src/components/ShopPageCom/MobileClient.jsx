@@ -2,7 +2,7 @@ import React from 'react';
 import hooliLogo from '../../assets/ShopPageİmg/hooli.png';
 import lyftLogo from '../../assets/ShopPageİmg/lyft.png';
 import leafLogo from '../../assets/ShopPageİmg/leaf.png';
-import stripeLogo from '../../assets/ShopPageİmg/stripe.png';
+import stripeLogo from '../../assets/ShopPageİmg/stripe.png'
 import awsLogo from '../../assets/ShopPageİmg/aws.png';
 import redditLogo from '../../assets/ShopPageİmg/reddit.png';
 

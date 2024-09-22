@@ -3,7 +3,7 @@ import HomePage from './HomePage';
 import ShopPage from './ShopPage';
 import ProductDetailPage from './ProduckDetailPage'
 import ContactPage from './ContactPage';
-import TeamPage from './TeamPage';
+import Teampage from './TeamPage';
 
 
 
@@ -15,7 +15,7 @@ function App() {
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/product/:id" element={<ProductDetailPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/team" element={<TeamPage />} />
+        <Route path="/team" element={<Teampage />} />
       </Routes>
     </Router>
   );

@@ -84,9 +84,12 @@ function Footer() {
 
             {/* En alt kısım - gri arka plan */}
             <div className="bg-gray-200 py-4">
-                <div className="max-w-6xl mx-auto px-4 flex justify-center">
-                    <p className="text-gray-500">Made With Love By Finland All Right Reserved</p>
+                <div className="max-w-6xl px-4 flex justify-center md:justify-start md:ml-44">
+                    <p className="text-gray-500 text-center md:text-left">
+                        Made With Love By Finland All Right Reserved
+                    </p>
                 </div>
+
             </div>
         </footer>
     );

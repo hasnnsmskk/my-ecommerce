@@ -1,16 +1,14 @@
 import React from 'react'
+import Main from "./components/ContactPageCom/Main"
 import Header from './components/ContactPageCom/Header'
-import QuestionsAnswers from './components/ContactPageCom/QuestionsAnswers'
-import ContactSection from './components/ContactPageCom/ContactSection'
-import GrowYours from './components/ContactPageCom/GrowYours'
+import Footer from "./components/ShopPageCom/Footer"
 
 function ContactPage() {
     return (
         <div>
             <Header />
-            <QuestionsAnswers />
-            <ContactSection />
-            <GrowYours />
+            <Main />
+            <Footer />
         </div>
     )
 }

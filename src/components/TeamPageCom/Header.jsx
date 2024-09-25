@@ -14,7 +14,7 @@ function Header() {
     return (
         <header className="relative z-20">
             {/* Header içeriği */}
-            <div className="bg-white shadow-md p-4">
+            <div className="bg-white  p-4">
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl font-bold ml-4">Bandage</h1>
 
@@ -29,18 +29,16 @@ function Header() {
 
                     {/* Sağdaki ikonlar */}
                     <div className="flex space-x-3 items-center mr-2">
-                        {/* Kullanıcı ikonu kaldırıldı */}
-                        <FontAwesomeIcon icon={faSearch} className="text-lg cursor-pointer md:hidden" />
-                        <FontAwesomeIcon icon={faShoppingCart} className="text-lg cursor-pointer md:hidden" />
 
-                        <Link to="/signup" className="hidden md:flex items-center text-blue-500 text-lg cursor-pointer">
-                            <FontAwesomeIcon icon={faUser} />
-                            <span className="ml-1">Login/Register</span>
-                        </Link>
-
-                        <FontAwesomeIcon icon={faSearch} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
-                        <FontAwesomeIcon icon={faShoppingCart} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
-                        <FontAwesomeIcon icon={faHeart} className="hidden md:block text-blue-500 text-lg cursor-pointer" />
+                        <div className="hidden md:flex space-x-4 items-center mr-32">
+                            <Link to="/signup" className="text-blue-500 text-lg cursor-pointer">
+                                Login
+                            </Link>
+                            <Link to="/signup" className="bg-blue-500 text-white py-1 px-3 rounded-1 flex items-center">
+                                Become a member
+                                <span className="ml-2">&rarr;</span>
+                            </Link>
+                        </div>
 
                         <FontAwesomeIcon icon={faBars} className="text-lg cursor-pointer md:hidden" onClick={toggleMenu} />
                     </div>

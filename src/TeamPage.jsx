@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/TeamPageCom/Header'
+import Header from './components/HomePageCom/Header'
 import Footer from './components/HomePageCom/Footer'
 import Team from './components/TeamPageCom/Team'
 import Hero from './components/TeamPageCom/Hero'

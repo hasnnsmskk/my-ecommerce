@@ -1,6 +1,6 @@
 import React from 'react'
 import Main from "./components/ContactPageCom/Main"
-import Header from './components/ContactPageCom/Header'
+import Header from './components/HomePageCom/Header'
 import Footer from "./components/ShopPageCom/Footer"
 
 function ContactPage() {

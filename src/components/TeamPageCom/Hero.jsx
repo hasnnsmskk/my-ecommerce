@@ -9,6 +9,7 @@ function Hero() {
 
             {/* Hero Section */}
             <section className=" mt-0 bg-gray-50 py-16 text-center">
+                <h1 className="text-xs text-gray-500 font-bold mb-3">WHAT WE DO</h1>
                 <h1 className="text-4xl font-bold mb-4">Innovation tailored for you</h1>
                 <div className="container mx-auto px-4">
                     <nav className="text-center md:text-right mt-2 md:mt-0 md:mr-4">

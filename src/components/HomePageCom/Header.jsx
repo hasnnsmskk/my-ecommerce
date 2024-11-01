@@ -56,13 +56,13 @@ function Header() {
                         <Link to="/shop" className="text-base text-gray-700">Shop</Link>
                         <Link to="/product" className="text-base text-gray-700">Product</Link>
                         <a href="#pricing" className="text-base text-gray-700">Pricing</a>
-                        <Link to="contact" className="text-base text-gray-700">Contact</Link>
+                        <Link to="/contact" className="text-base text-gray-700">Contact</Link>
                         <div className="relative">
                             <button onClick={togglePages} className="text-base text-gray-700">Pages</button>
                             {showPages && (
                                 <div className="absolute bg-white shadow-lg mt-2 rounded-md">
                                     <Link to="/team" className="block px-4 py-2 text-gray-700">Team Page</Link>
-                                    <Link to="/about" className="block px-4 py-2 text-gray-700">About Page</Link>
+                                    <Link to="/about" className="block px-4 py-2 text-gray-700">About US</Link>
                                 </div>
 
 
@@ -96,7 +96,7 @@ function Header() {
                         <Link to="/shop" className="text-base text-gray-700">Shop</Link>
                         <Link to="/product" className="text-base text-gray-700">Product</Link>
                         <a href="#pricing" className="text-base text-gray-700">Pricing</a>
-                        <Link to="contact" className="text-base text-gray-700">Contact</Link>
+                        <Link to="/contact" className="text-base text-gray-700">Contact</Link>
                     </nav>
                 )}
             </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import shop from "../../assets/ContactPageİmg/shop.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowTurnDown } from '@fortawesome/free-solid-svg-icons'
@@ -7,7 +6,7 @@ import { faEnvelope, faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 const ContactPage = () => {
   return (
-    <div className="flex flex-col items-center w-full ml-12">
+    <div className="flex flex-col items-center w-full">
 
 
       {/* Ana içerik */}

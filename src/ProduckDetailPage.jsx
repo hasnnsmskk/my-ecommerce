@@ -1,5 +1,5 @@
 import React from 'react'
-import TopBar from './components/ShopPageCom/TopBar'
+import Header from './components/HomePageCom/Header'
 import CategoryList from './components/ProductPage/CategoryList'
 import MobileClient from './components/ShopPageCom/MobileClient'
 import Footer from './components/ShopPageCom/Footer'
@@ -9,7 +9,7 @@ import Detail from './components/ProductPage/Detail'
 function ProduckDetailPage() {
     return (
         <div>
-            <TopBar />
+            <Header />
             <ProductDetail />
             <Detail />
             <CategoryList />
